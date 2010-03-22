@@ -1,6 +1,6 @@
 import pygame
 from sgnode import sgnode
-from vector2D import vector2D
+from vector import vector2D
 import imagedata
 
 class baseGame(object):

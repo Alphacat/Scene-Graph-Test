@@ -1,5 +1,5 @@
 # Scene graph implementation
-from vector2D import vector2D
+from vector import vector2D
 
 class sgnode(object):
 	ids = 0

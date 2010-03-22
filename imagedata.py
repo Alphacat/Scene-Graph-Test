@@ -1,5 +1,5 @@
 import pygame
-from vector2D import vector2D
+from vector import vector2D
 
 class sprite(object):
 	def __init__(self, filename):
