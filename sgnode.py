@@ -32,68 +32,68 @@ class sgnode(object):
 		
 	# Properties
 	# Position functions
-	def getpos(self)
+	def getpos(self):
 		return self.__position
 		
-	def setpos(self, value) # Set the x and y vectors wholesale
+	def setpos(self, value): # Set the x and y vectors wholesale
 		self.__position = value
 		
 	position = property(getpos, setpos, None, "Sets the position vector")
 	
-	def getposx(self)
+	def getposx(self):
 		return self.__position.x
 		
-	def setposx(self, value)
+	def setposx(self, value):
 		self.__position.x = value
 		
 	posx = property(getposx, setposx, None, "Sets the x-coordinate of the position")
 
-	def getposy(self)
+	def getposy(self):
 		return self.__position.y
 		
-	def setposy(self, value)
+	def setposy(self, value):
 		self.__position.y = value
 		
 	posy = property(getposy, setposy, None, "Sets the y-coordinate of the position")	
 	
 	# Angle
-	def getangle(self)
+	def getangle(self):
 		return self.__angle.angle
 	
-	def setangle(self, value)
+	def setangle(self, value):
 		self.__angle.angle = value
 		
 	angle = property(setangle, getangle, None, "Gets the angle of the node")
 	
-	def getangledegree(self)
+	def getangledegree(self):
 		return self.__angle.degree
 	
-	def set angledegree(self, value)
+	def setangledegree(self, value):
 		self.__angle.degree - value
 		
 	angledegree = property(setangledegree, getangledegree, None, "Gets the degree of the node in degrees (not radians)")
 	
 	# Size
-	def getsize(self) # Returns (xsize, ysize)
+	def getsize(self): # Returns (xsize, ysize)
 		return self.__size
 	
-	def setsize(self, value) # Set both xsize and ysize in one shot
+	def setsize(self, value): # Set both xsize and ysize in one shot
 		self.__size.x, self.__size.y = value, value
 		
 	size = property( getsize, setsize, None, "Property to get or set both size values at once")
 	
-	def getsizex(self)
+	def getsizex(self):
 		return self.__size.x
 		
-	def setsizex(self, value)
+	def setsizex(self, value):
 		self.__size.x = value
 		
 	sizex = property( getsizex, setsizex, None, "Property to get or modify the x scalar" )
 	
-	def getsizey(self)
+	def getsizey(self):
 		return self.__size.y
 		
-	def setsizey(self, value)
+	def setsizey(self, value):
 		self.__size.y = value
 		
 	sizey = property( getsizey, setsizey, None, "Property to get/modify the y scalar")
